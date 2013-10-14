@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="biologicalContext" type="biologicalContextResponse"/>
+
+  <xs:element name="biologicalSource" type="biologicalSource"/>
+
+  <xs:element name="structure1" type="structureComplete"/>
+
+  <xs:element name="taxonomy" type="taxonomyResponse"/>
+
+  <xs:element name="tissueTaxonomy" type="tissueTaxonomyResponse"/>
+
+  <xs:complexType name="completeListResponse">
+    <xs:sequence>
+      <xs:element name="structure" type="structureComplete" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string"/>
+    <xs:attribute name="baseURL" type="xs:string"/>
+    <xs:attribute name="numberofStructure" type="xs:int" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="structureComplete">
+    <xs:sequence>
+      <xs:element name="glycanSequence" type="xs:string" minOccurs="0"/>
+      <xs:element ref="biologicalSource" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="biologicalSource">
+    <xs:sequence>
+      <xs:element name="biologicalContextResponse" type="biologicalContextResponse" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="biologicalContextResponse">
+    <xs:sequence>
+      <xs:element ref="taxonomy" minOccurs="0"/>
+      <xs:element ref="tissueTaxonomy" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="taxonomyResponse">
+    <xs:sequence/>
+    <xs:attribute name="ncbiId" type="xs:string"/>
+    <xs:attribute name="name" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="tissueTaxonomyResponse">
+    <xs:sequence/>
+    <xs:attribute name="meshId" type="xs:string"/>
+    <xs:attribute name="name" type="xs:string"/>
+  </xs:complexType>
+</xs:schema>
+

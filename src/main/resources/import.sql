@@ -1,0 +1,6 @@
+-- You can use this file to load seed data into the database using SQL statements
+--insert into Member (id, name, email, phone_number) values (0, 'Jingyu ZHANG', 'jing.zhang@mq.edu.au', '2125551212');
+--INSERT INTO glycan_sequence(glycan_sequence_id, sequence_iupac, sequence_ct, sequence_ct_condensed,sequence_gws, residue_count, mass_monoisotopic, mass_average,composition,  contributor_id, sequence_glycam) VALUES (1, 'iupac1', 'RES\n1b:b-dglc-HEX-1:5\n2b:b-dglc-HEX-1:5\n3b:b-dglc-HEX-1:5\n4b:b-dglc-HEX-1:5\n5b:b-dglc-HEX-1:5\n6b:b-dglc-HEX-1:5\nLIN\n1:1o(3+1)2d\n2:1o(6+1)3d\n3:3o(6+1)4d\n4:4o(3+1)5d\n5:4o(6+1)6d\n', '1','1', 1, 1, '1', '1',  1, '1');
+--INSERT INTO glycan_sequence(glycan_sequence_id, sequence_iupac, sequence_ct, sequence_ct_condensed,sequence_gws, residue_count, mass_monoisotopic, mass_average,composition,  contributor_id, sequence_glycam) VALUES (2, 'iupac2', 'RES\n1b:b-dglc-HEX-1:5\n2b:b-dglc-HEX-1:5\n3b:b-dglc-HEX-1:5\n4b:b-dglc-HEX-1:5\n5b:b-dglc-HEX-1:5\n6b:b-dglc-HEX-1:5\nLIN\n1:1o(3+1)2d\n2:1o(6+1)3d\n3:3o(6+1)4d\n4:4o(3+1)5d\n5:4o(6+1)6d\n', '1','1', 1, 1, '1', '1',  1, '1')
+
+            

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://www.unicarbkb.org/core" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:import schemaLocation="CompleteListResponse2.xsd"/>
+
+  <xs:element name="queryResult" type="completeListResponse"/>
+
+</xs:schema>
+
