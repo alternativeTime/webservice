@@ -1,10 +1,10 @@
 cross-database-search
 ========================
 
-What is it?
+
 -----------
 
-This is your project! It is a sample, deployable Maven 3 project to help you get your foot in the door developing with Java EE 6 on JBoss Enterprise Application Platform 6 or JBoss AS 7.1. 
+It is a search engine for matching of mass spectrometer data. It develop with Java EE 6 on JBoss AS 7.X. 
 
 This project is setup to allow you to create a compliant Java EE 6 application using JSF 2.0, CDI 1.0, EJB 3.1, JPA 2.0 and Bean Validation 1.0. It includes a persistence unit and some sample persistence and transaction code to introduce you to database access in enterprise Java. 
 
@@ -14,13 +14,13 @@ System requirements
 
 All you need to build this project is Java 6.0 (Java SDK 1.6) or better, Maven 3.0 or better.
 
-The application this project produces is designed to be run on JBoss Enterprise Application Platform 6 or JBoss AS 7.1. 
+The application this project produces is designed to be run on JBoss Enterprise Application Platform  7.X. 
 
 
 Configure Maven
 ---------------
 
-If you have not yet done so, you must [Configure Maven](../README.html/#mavenconfiguration) before testing the quickstarts.
+If you have not yet done so, you must [Configure Maven]before using this project.
 
 
 Start JBoss Enterprise Application Platform 6 or JBoss AS 7.1
@@ -77,9 +77,9 @@ _NOTE: The following commands assume you have configured your Maven user setting
         mvn clean test -Parq-jbossas-remote 
 
 
-Run the Quickstart in JBoss Developer Studio or Eclipse
+Run the application in JBoss Developer Studio or Eclipse
 -------------------------------------
-You can also start the server and deploy the quickstarts from Eclipse using JBoss tools. For more information, see [Use JBoss Developer Studio or Eclipse to Run the Quickstarts](../README.html/#useeclipse) 
+You can also start the server and deploy the application from Eclipse using JBoss tools. For more information, see [Use JBoss Developer Studio or Eclipse to Run the Quickstarts](../README.html/#useeclipse) 
 
 
 Debug the Application
